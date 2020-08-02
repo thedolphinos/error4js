@@ -1,7 +1,7 @@
 {
   "name": "@thedolphinos/error4js",
-  "version": "0.2.0",
-  "description": " An error library for JavaScript.",
+  "version": "0.2.1",
+  "description": "An error library for JavaScript.",
   "keywords": [
     "dolphinos",
     "error",
