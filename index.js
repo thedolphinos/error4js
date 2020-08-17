@@ -6,11 +6,14 @@ const DirectoryNotExistError = require("./lib/core/DirectoryNotExistError");
 const StaticClassInstantiationError = require("./lib/class/StaticClassInstantiationError");
 const DocumentNotFoundError = require("./lib/db/DocumentNotFoundError");
 const MoreThan1DocumentFoundError = require("./lib/db/MoreThan1DocumentFoundError");
+const BodyMissingError = require("./lib/request/BodyMissingError");
 
 module.exports = {
   InvalidArgumentsError,
   FileNotExistError,
   DirectoryNotExistError,
   StaticClassInstantiationError,
-  MoreThan1DocumentFoundError
+  DocumentNotFoundError,
+  MoreThan1DocumentFoundError,
+  BodyMissingError
 };
