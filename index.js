@@ -7,6 +7,7 @@ const StaticClassInstantiationError = require("./lib/class/StaticClassInstantiat
 const DocumentNotFoundError = require("./lib/db/DocumentNotFoundError");
 const MoreThan1DocumentFoundError = require("./lib/db/MoreThan1DocumentFoundError");
 const HTTPError = require("./lib/http/HTTPError");
+const BadRequestError = require("./lib/http/client/BadRequestError");
 const HeadersMissingError = require("./lib/http/client/bad-requests/HeadersMissingError");
 const PathParametersMissingError = require("./lib/http/client/bad-requests/PathParametersMissingError");
 const PathParameterMissingError = require("./lib/http/client/bad-requests/PathParameterMissingError");
@@ -19,10 +20,16 @@ module.exports = {
   InvalidArgumentsError,
   FileNotExistError,
   DirectoryNotExistError,
+
   StaticClassInstantiationError,
+
   DocumentNotFoundError,
   MoreThan1DocumentFoundError,
+
   HTTPError,
+
+  BadRequestError,
+
   HeadersMissingError,
   PathParametersMissingError,
   PathParameterMissingError,
