@@ -1,12 +1,12 @@
 "use strict";
 
-const InvalidArgumentsError = require("./lib/core/InvalidArgumentsError");
-const FileNotExistError = require("./lib/core/FileNotExistError");
-const DirectoryNotExistError = require("./lib/core/DirectoryNotExistError");
-const StaticClassInstantiationError = require("./lib/class/StaticClassInstantiationError");
+const InvalidArgumentsError = require("./lib/developer/InvalidArgumentsError");
+const FileNotExistError = require("./lib/developer/FileNotExistError");
+const DirectoryNotExistError = require("./lib/developer/DirectoryNotExistError");
+const StaticClassInstantiationError = require("./lib/developer/StaticClassInstantiationError");
 const DocumentNotFoundError = require("./lib/db/DocumentNotFoundError");
 const MoreThan1DocumentFoundError = require("./lib/db/MoreThan1DocumentFoundError");
-const HTTPError = require("./lib/http/HTTPError");
+const HTTPError = require("./lib/core/HTTPError");
 const BadRequestError = require("./lib/http/client/BadRequestError");
 const HeadersMissingError = require("./lib/http/client/bad-requests/HeadersMissingError");
 const PathParametersMissingError = require("./lib/http/client/bad-requests/PathParametersMissingError");
