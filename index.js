@@ -12,17 +12,29 @@ const MoreThan1DocumentFoundError = require("./lib/db/MoreThan1DocumentFoundErro
 
 const HTTPError = require("./lib/core/HTTPError");
 
-const ServerError = require("./lib/http/ServerError");
-const InternalServerError = require("./lib/http/server/InternalServerError");
+const ServerError = require("./lib/http/ServerError"); //  500s
+const ClientError = require("./lib/http/ClientError"); //  400s
 
-const ClientError = require("./lib/http/ClientError");
-const BadRequestError = require("./lib/http/client/BadRequestError");
+const InternalServerError = require("./lib/http/server/InternalServerError"); // 500
+const BadRequestError = require("./lib/http/client/BadRequestError"); // 400
+const UnauthorizedError = require("./lib/http/client/UnauthorizedError"); // 401
+const ForbiddenError = require("./lib/http/client/ForbiddenError"); // 403
+
+/* 400 */
 const HeadersMissingError = require("./lib/http/client/bad-requests/HeadersMissingError");
 const PathParametersMissingError = require("./lib/http/client/bad-requests/PathParametersMissingError");
 const PathParameterMissingError = require("./lib/http/client/bad-requests/PathParameterMissingError");
 const QueryStringMissingError = require("./lib/http/client/bad-requests/QueryStringMissingError");
 const QueryStringParameterMissingError = require("./lib/http/client/bad-requests/QueryStringParameterMissingError");
 const BodyMissingError = require("./lib/http/client/bad-requests/BodyMissingError");
+
+/* 401 */
+const InvalidCredentialsError = require("./lib/http/client/unauthorizeds/InvalidCredentialsError");
+const InvalidTokenError = require("./lib/http/client/unauthorizeds/InvalidTokenError");
+
+/* 403 */
+const AccountBlockedError = require("./lib/http/client/forbiddens/AccountBlockedError");
+const TokenExpiredError = require("./lib/http/client/forbiddens/TokenExpiredError");
 
 module.exports = {
   DeveloperError,
@@ -37,15 +49,27 @@ module.exports = {
 
   HTTPError,
 
-  ServerError,
-  InternalServerError,
+  ServerError, //  500s
+  ClientError, //  400s
 
-  ClientError,
-  BadRequestError,
+  InternalServerError, // 500
+  BadRequestError, // 400
+  UnauthorizedError, // 401
+  ForbiddenError, // 403
+
+  /* 400 */
   HeadersMissingError,
   PathParametersMissingError,
   PathParameterMissingError,
   QueryStringMissingError,
   QueryStringParameterMissingError,
-  BodyMissingError
+  BodyMissingError,
+
+  /* 401 */
+  InvalidCredentialsError,
+  InvalidTokenError,
+
+  /* 403 */
+  AccountBlockedError,
+  TokenExpiredError
 };
