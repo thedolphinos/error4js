@@ -27,6 +27,7 @@ const PathParameterMissingError = require("./lib/http/client/bad-requests/PathPa
 const QueryStringMissingError = require("./lib/http/client/bad-requests/QueryStringMissingError");
 const QueryStringParameterMissingError = require("./lib/http/client/bad-requests/QueryStringParameterMissingError");
 const BodyMissingError = require("./lib/http/client/bad-requests/BodyMissingError");
+const RequiredPropertiesMissingError = require("./lib/http/client/bad-requests/RequiredPropertiesMissingError");
 
 /* 401 */
 const InvalidCredentialsError = require("./lib/http/client/unauthorizeds/InvalidCredentialsError");
@@ -64,6 +65,7 @@ module.exports = {
   QueryStringMissingError,
   QueryStringParameterMissingError,
   BodyMissingError,
+  RequiredPropertiesMissingError,
 
   /* 401 */
   InvalidCredentialsError,
