@@ -1,5 +1,7 @@
 "use strict";
 
+const BaseError = require("./lib/core/BaseError");
+
 const DeveloperError = require("./lib/core/DeveloperError");
 const InvalidArgumentsError = require("./lib/developer/InvalidArgumentsError");
 const StaticClassInstantiationError = require("./lib/developer/StaticClassInstantiationError");
@@ -38,6 +40,8 @@ const AccountBlockedError = require("./lib/http/client/forbiddens/AccountBlocked
 const TokenExpiredError = require("./lib/http/client/forbiddens/TokenExpiredError");
 
 module.exports = {
+  BaseError,
+
   DeveloperError,
   InvalidArgumentsError,
   StaticClassInstantiationError,
