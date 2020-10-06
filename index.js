@@ -1,5 +1,3 @@
-"use strict";
-
 const BaseError = require("./lib/core/BaseError");
 
 const DeveloperError = require("./lib/core/DeveloperError");
@@ -74,8 +72,8 @@ module.exports = {
   /* 401 */
   InvalidCredentialsError,
   InvalidTokenError,
+  TokenExpiredError,
 
   /* 403 */
-  AccountBlockedError,
-  TokenExpiredError
+  AccountBlockedError
 };
