@@ -22,11 +22,13 @@ const ForbiddenError = require("./lib/http/client/ForbiddenError"); // 403
 
 /* 400 */
 const HeadersMissingError = require("./lib/http/client/bad-requests/HeadersMissingError");
+const HeadersParameterMissingError = require("./lib/http/client/bad-requests/HeadersParameterMissingError");
 const PathParametersMissingError = require("./lib/http/client/bad-requests/PathParametersMissingError");
 const PathParameterMissingError = require("./lib/http/client/bad-requests/PathParameterMissingError");
 const QueryStringMissingError = require("./lib/http/client/bad-requests/QueryStringMissingError");
 const QueryStringParameterMissingError = require("./lib/http/client/bad-requests/QueryStringParameterMissingError");
 const BodyMissingError = require("./lib/http/client/bad-requests/BodyMissingError");
+const BodyParameterMissingError = require("./lib/http/client/bad-requests/BodyParameterMissingError");
 const RequiredPropertiesMissingError = require("./lib/http/client/bad-requests/RequiredPropertiesMissingError");
 
 /* 401 */
@@ -62,11 +64,13 @@ module.exports = {
 
   /* 400 */
   HeadersMissingError,
+  HeadersParameterMissingError,
   PathParametersMissingError,
   PathParameterMissingError,
   QueryStringMissingError,
   QueryStringParameterMissingError,
   BodyMissingError,
+  BodyParameterMissingError,
   RequiredPropertiesMissingError,
 
   /* 401 */
