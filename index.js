@@ -1,5 +1,7 @@
 const BaseError = require("./lib/core/BaseError");
 
+const CustomError = require("./lib/core/CustomError");
+
 const DeveloperError = require("./lib/core/DeveloperError");
 const InvalidArgumentsError = require("./lib/developer/InvalidArgumentsError");
 const StaticClassInstantiationError = require("./lib/developer/StaticClassInstantiationError");
@@ -44,6 +46,8 @@ const DATA = require("./lib/DATA.json");
 
 module.exports = {
   BaseError,
+
+  CustomError,
 
   DeveloperError,
   InvalidArgumentsError,
