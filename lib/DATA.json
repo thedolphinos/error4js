@@ -1,0 +1,196 @@
+{
+  "BASE": {
+    "code": "ERR_0000",
+    "message": {
+      "en": "Unknown."
+    }
+  },
+  "DEV_0": {
+    "code": "ERR_1000",
+    "message": {
+      "en": "Unknown developer error."
+    }
+  },
+  "DEV_1": {
+    "code": "ERR_1001",
+    "message": {
+      "en": "Invalid arguments."
+    }
+  },
+  "DEV_2": {
+    "code": "ERR_1002",
+    "message": {
+      "en": "Static class $0 cannot be instantiated."
+    }
+  },
+  "DEV_3": {
+    "code": "ERR_1003",
+    "message": {
+      "en": "File is not exist."
+    }
+  },
+  "DEV_4": {
+    "code": "ERR_1004",
+    "message": {
+      "en": "Directory is not exist."
+    }
+  },
+  "DB_0": {
+    "code": "ERR_2000",
+    "message": {
+      "en": "Unknown DB error."
+    }
+  },
+  "DB_1": {
+    "code": "ERR_2001",
+    "message": {
+      "en": "Document not found."
+    }
+  },
+  "DB_2": {
+    "code": "ERR_2002",
+    "message": {
+      "en": "More than 1 document was found with the specified query. However, for this operation it must be 1."
+    }
+  },
+  "HTTP_0": {
+    "code": "ERR_3000",
+    "message": {
+      "en": "Unknown HTTP error."
+    },
+    "statusCode": 500
+  },
+  "HTTP_10": {
+    "code": "ERR_3100",
+    "message": {
+      "en": "Unknown HTTP server error."
+    },
+    "statusCode": 500
+  },
+  "HTTP_11": {
+    "code": "ERR_3110",
+    "message": {
+      "en": "Oops, sorry! It's not about you."
+    },
+    "statusCode": 500
+  },
+  "HTTP_20": {
+    "code": "ERR_3200",
+    "message": {
+      "en": "Unknown HTTP client error."
+    },
+    "statusCode": 400
+  },
+  "HTTP_21": {
+    "code": "ERR_3210",
+    "message": {
+      "en": "Bad request."
+    },
+    "statusCode": 400
+  },
+  "HTTP_22": {
+    "code": "ERR_3220",
+    "message": {
+      "en": "Unauthorized."
+    },
+    "statusCode": 401
+  },
+  "HTTP_23": {
+    "code": "ERR_3230",
+    "message": {
+      "en": "Forbidden."
+    },
+    "statusCode": 403
+  },
+  "HTTP_211": {
+    "code": "ERR_3211",
+    "message": {
+      "en": "Request headers are missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_212": {
+    "code": "ERR_3212",
+    "message": {
+      "en": "Request header parameter $0 is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_213": {
+    "code": "ERR_3213",
+    "message": {
+      "en": "Request path parameters are missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_214": {
+    "code": "ERR_3214",
+    "message": {
+      "en": "Request path parameter $0 is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_215": {
+    "code": "ERR_3215",
+    "message": {
+      "en": "Request query string is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_216": {
+    "code": "ERR_3216",
+    "message": {
+      "en": "Request query string parameter $0 is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_217": {
+    "code": "ERR_3217",
+    "message": {
+      "en": "Request body is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_218": {
+    "code": "ERR_3218",
+    "message": {
+      "en": "Request body parameter $0 is missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_219": {
+    "code": "ERR_3219",
+    "message": {
+      "en": "Required properties are missing."
+    },
+    "statusCode": 400
+  },
+  "HTTP_221": {
+    "code": "ERR_3221",
+    "message": {
+      "en": "Invalid credentials."
+    },
+    "statusCode": 401
+  },
+  "HTTP_222": {
+    "code": "ERR_3222",
+    "message": {
+      "en": "Invalid token."
+    },
+    "statusCode": 401
+  },
+  "HTTP_231": {
+    "code": "ERR_3231",
+    "message": {
+      "en": "Account is blocked."
+    },
+    "statusCode": 403
+  },
+  "HTTP_232": {
+    "code": "ERR_3232",
+    "message": {
+      "en": "Token is expired."
+    },
+    "statusCode": 403
+  }
+}

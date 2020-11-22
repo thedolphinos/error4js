@@ -16,6 +16,7 @@ const ServerError = require("./lib/http/ServerError"); //  500s
 const ClientError = require("./lib/http/ClientError"); //  400s
 
 const InternalServerError = require("./lib/http/server/InternalServerError"); // 500
+
 const BadRequestError = require("./lib/http/client/BadRequestError"); // 400
 const UnauthorizedError = require("./lib/http/client/UnauthorizedError"); // 401
 const ForbiddenError = require("./lib/http/client/ForbiddenError"); // 403
@@ -39,6 +40,8 @@ const InvalidTokenError = require("./lib/http/client/unauthorizeds/InvalidTokenE
 const AccountBlockedError = require("./lib/http/client/forbiddens/AccountBlockedError");
 const TokenExpiredError = require("./lib/http/client/forbiddens/TokenExpiredError");
 
+const DATA = require("./lib/DATA.json");
+
 module.exports = {
   BaseError,
 
@@ -58,6 +61,7 @@ module.exports = {
   ClientError, //  400s
 
   InternalServerError, // 500
+
   BadRequestError, // 400
   UnauthorizedError, // 401
   ForbiddenError, // 403
@@ -79,5 +83,7 @@ module.exports = {
   TokenExpiredError,
 
   /* 403 */
-  AccountBlockedError
+  AccountBlockedError,
+
+  DATA
 };
