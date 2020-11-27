@@ -179,17 +179,17 @@
     },
     "statusCode": 401
   },
+  "HTTP_223": {
+    "code": "ERR_3232",
+    "message": {
+      "en": "Token is expired."
+    },
+    "statusCode": 401
+  },
   "HTTP_231": {
     "code": "ERR_3231",
     "message": {
       "en": "Account is blocked."
-    },
-    "statusCode": 403
-  },
-  "HTTP_232": {
-    "code": "ERR_3232",
-    "message": {
-      "en": "Token is expired."
     },
     "statusCode": 403
   }
