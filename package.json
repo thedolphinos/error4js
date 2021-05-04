@@ -1,6 +1,6 @@
 {
   "name": "@thedolphinos/error4js",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "An error library for JavaScript.",
   "keywords": [
     "dolphinos",
@@ -26,8 +26,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@thedolphinos/utility4js": "^0.16.0",
-    "lodash": "^4.17.20"
+    "@thedolphinos/utility4js": "^0.18.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {}
 }
