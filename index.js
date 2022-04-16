@@ -35,10 +35,10 @@ const RequiredPropertiesMissingError = require("./lib/http/client/bad-requests/R
 /* 401 */
 const InvalidCredentialsError = require("./lib/http/client/unauthorizeds/InvalidCredentialsError");
 const InvalidTokenError = require("./lib/http/client/unauthorizeds/InvalidTokenError");
+const TokenExpiredError = require("./lib/http/client/forbiddens/TokenExpiredError");
+const AccountBlockedError = require("./lib/http/client/forbiddens/AccountBlockedError");
 
 /* 403 */
-const AccountBlockedError = require("./lib/http/client/forbiddens/AccountBlockedError");
-const TokenExpiredError = require("./lib/http/client/forbiddens/TokenExpiredError");
 
 const DATA = require("./lib/DATA.json");
 
@@ -81,9 +81,9 @@ module.exports = {
   InvalidCredentialsError,
   InvalidTokenError,
   TokenExpiredError,
+  AccountBlockedError,
 
   /* 403 */
-  AccountBlockedError,
 
   DATA
 };

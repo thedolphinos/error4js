@@ -90,7 +90,7 @@
     "code": "ERR_3200",
     "message": {
       "en": "Unknown HTTP client error.",
-      "en": "Bilinmeyen HTTP istemcisi hatası."
+      "tr": "Bilinmeyen HTTP istemcisi hatası."
     },
     "statusCode": 400
   },
@@ -207,19 +207,19 @@
     "statusCode": 401
   },
   "HTTP_223": {
-    "code": "ERR_3232",
+    "code": "ERR_3223",
     "message": {
       "en": "Token is expired.",
       "tr": "Token in süresi doldu."
     },
     "statusCode": 401
   },
-  "HTTP_231": {
-    "code": "ERR_3231",
+  "HTTP_224": {
+    "code": "ERR_3224",
     "message": {
       "en": "Account is blocked.",
       "tr": "Hesap bloke edildi."
     },
-    "statusCode": 403
+    "statusCode": 401
   }
 }
