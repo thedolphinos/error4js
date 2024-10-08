@@ -1,33 +1,33 @@
 {
-  "name": "@thedolphinos/error4js",
-  "version": "0.29.0",
-  "description": "An error library for JavaScript.",
-  "keywords": [
-    "dolphinos",
-    "error",
-    "library"
-  ],
-  "homepage": "https://github.com/thedolphinos/error4js",
-  "bugs": {
-    "url": "https://github.com/thedolphinos/error4js/issues",
-    "email": "project@dolphinos.com"
-  },
-  "license": "MIT",
-  "contributors": [
-    "Onur Çipe <onur@dolphinos.com>",
-    "Selma Çipe <selma@dolphinos.com>"
-  ],
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thedolphinos/error4js.git"
-  },
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "@thedolphinos/utility4js": "^0.24.1",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {}
+    "name": "@thedolphinos/error4js",
+    "version": "0.30.0",
+    "description": "An error library for JavaScript.",
+    "keywords": [
+        "dolphinos",
+        "error",
+        "library"
+    ],
+    "homepage": "https://github.com/thedolphinos/error4js",
+    "bugs": {
+        "url": "https://github.com/thedolphinos/error4js/issues",
+        "email": "project@dolphinos.com"
+    },
+    "license": "MIT",
+    "contributors": [
+        "Onur Cipe <onur@dolphinos.com>",
+        "Selma Cipe <selma@dolphinos.com>"
+    ],
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thedolphinos/error4js.git"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@thedolphinos/utility4js": "^0",
+        "lodash": "^4"
+    },
+    "devDependencies": {}
 }
