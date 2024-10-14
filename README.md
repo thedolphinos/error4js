@@ -1,2 +1,2 @@
 # @thedolphinos/error4js
-An error library for JavaScript.
+An error library for JavaScript and TypeScript.

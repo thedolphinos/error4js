@@ -1,7 +1,7 @@
 {
     "name": "@thedolphinos/error4js",
-    "version": "0.30.0",
-    "description": "An error library for JavaScript.",
+    "version": "0.31.0",
+    "description": "An error library for JavaScript and TypeScript.",
     "keywords": [
         "dolphinos",
         "error",
@@ -17,17 +17,23 @@
         "Onur Cipe <onur@dolphinos.com>",
         "Selma Cipe <selma@dolphinos.com>"
     ],
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "types/index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/thedolphinos/error4js.git"
     },
     "scripts": {
-        "start": "node index.js"
+        "build": "tsc",
+        "start": "node dist/index.js"
     },
     "dependencies": {
-        "@thedolphinos/utility4js": "^0",
+        "@thedolphinos/utility4js": "^0.31.4",
         "lodash": "^4"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "@types/lodash": "^4",
+        "@types/node": "^20",
+        "typescript": "^5"
+    }
 }
