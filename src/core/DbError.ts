@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import BaseError from "./BaseError";
 import DATA from "../DATA.json";
 
@@ -13,7 +12,6 @@ class DbError extends BaseError
      */
     constructor (data: {code: string, message: {[key: string]: string}} = DATA.DB_0, ...args: any[])
     {
-        data = utility.init(data, DATA.DB_0);
         super(data, ...args);
     }
 }

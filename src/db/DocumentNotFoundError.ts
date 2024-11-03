@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import DbError from "../core/DbError";
 import DATA from "../DATA.json";
 
@@ -13,7 +12,6 @@ class DocumentNotFoundError extends DbError
      */
     constructor (data: {code: string, message: {[key: string]: string}} = DATA.DB_1, ...args: any[])
     {
-        data = utility.init(data, DATA.DB_1);
         super(data, ...args);
     }
 }

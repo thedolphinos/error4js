@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import DeveloperError from "../core/DeveloperError";
 import DATA from "../DATA.json";
 
@@ -13,7 +12,6 @@ class FileNotExistError extends DeveloperError
      */
     constructor (data: {code: string, message: {[key: string]: string}} = DATA.DEV_3, ...args: any[])
     {
-        data = utility.init(data, DATA.DEV_3);
         super(data, ...args);
     }
 }

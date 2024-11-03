@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import BadRequestError from "../BadRequestError";
 import DATA from "../../../DATA.json";
 
@@ -13,7 +12,6 @@ class HeadersMissingError extends BadRequestError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_211, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_211);
         super(data, ...args);
     }
 }

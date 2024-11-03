@@ -1,4 +1,4 @@
-import utility from "@thedolphinos/utility4js";
+import {isExist} from "@thedolphinos/utility4js";
 import InvalidArgumentsError from "../../developer/InvalidArgumentsError";
 import ClientError from "../ClientError";
 import DATA from "../../DATA.json";
@@ -17,11 +17,9 @@ class BadRequestError extends ClientError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_21, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_21);
-
-        if (utility.isExist(data))
+        if (isExist(data))
         {
-            if (utility.isExist(data.statusCode))
+            if (isExist(data.statusCode))
             {
                 BadRequestError._validateStatusCode(data.statusCode);
             }

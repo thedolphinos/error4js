@@ -1,5 +1,6 @@
-import utility from "@thedolphinos/utility4js";
 import _ from "lodash";
+
+import {isExist} from "@thedolphinos/utility4js";
 
 import DeveloperError from "../core/DeveloperError";
 import InvalidArgumentsError from "./InvalidArgumentsError";
@@ -17,8 +18,6 @@ class StaticClassInstantiationError extends DeveloperError
      */
     constructor (className: string | undefined = undefined, data: {code: string, message: {[key: string]: string}} = DATA.DEV_2, ...args: any[])
     {
-        data = utility.init(data, DATA.DEV_2);
-
         StaticClassInstantiationError._validateClassName(className);
 
         super(data, ...args);
@@ -32,7 +31,7 @@ class StaticClassInstantiationError extends DeveloperError
      */
     private static _validateClassName (className: string | undefined): void
     {
-        if (utility.isExist(className) && !_.isString(className))
+        if (isExist(className) && !_.isString(className))
         {
             throw new InvalidArgumentsError();
         }

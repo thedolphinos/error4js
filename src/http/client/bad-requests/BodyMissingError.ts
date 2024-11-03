@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import BadRequestError from "../BadRequestError";
 import DATA from "../../../DATA.json";
 
@@ -13,7 +12,6 @@ class BodyMissingError extends BadRequestError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_217, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_217);
         super(data, ...args);
     }
 }

@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import UnauthorizedError from "../UnauthorizedError";
 import DATA from "../../../DATA.json";
 
@@ -13,7 +12,6 @@ class AccountBlockedError extends UnauthorizedError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_224, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_224);
         super(data, ...args);
     }
 }

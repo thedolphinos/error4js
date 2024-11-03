@@ -1,4 +1,5 @@
-import utility from "@thedolphinos/utility4js";
+import {isExist} from "@thedolphinos/utility4js";
+
 import InvalidArgumentsError from "../developer/InvalidArgumentsError";
 import HTTPError from "../core/HTTPError";
 import DATA from "../DATA.json";
@@ -14,9 +15,7 @@ class ClientError extends HTTPError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_20, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_20);
-
-        if (utility.isExist(data) && utility.isExist(data.statusCode))
+        if (isExist(data) && isExist(data.statusCode))
         {
             ClientError._validateStatusCode(data.statusCode);
         }

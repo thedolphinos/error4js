@@ -1,5 +1,6 @@
-import utility from "@thedolphinos/utility4js";
 import _ from "lodash";
+
+import {isExist} from "@thedolphinos/utility4js";
 
 import InvalidArgumentsError from "../../../developer/InvalidArgumentsError";
 import BadRequestError from "../BadRequestError";
@@ -17,8 +18,6 @@ class HeaderParameterMissingError extends BadRequestError
      */
     constructor (name: string | undefined = undefined, data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_212, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_212);
-
         HeaderParameterMissingError._validateName(name);
 
         super(data, ...args);
@@ -32,7 +31,7 @@ class HeaderParameterMissingError extends BadRequestError
      */
     private static _validateName (name: string | undefined): void
     {
-        if (utility.isExist(name) && !_.isString(name))
+        if (isExist(name) && !_.isString(name))
         {
             throw new InvalidArgumentsError();
         }

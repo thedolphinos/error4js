@@ -1,4 +1,3 @@
-import utility from "@thedolphinos/utility4js";
 import UnauthorizedError from "../UnauthorizedError";
 import DATA from "../../../DATA.json";
 
@@ -13,7 +12,6 @@ class TokenExpiredError extends UnauthorizedError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_223, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_223);
         super(data, ...args);
     }
 }

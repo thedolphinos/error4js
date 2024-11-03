@@ -1,4 +1,5 @@
-import utility from "@thedolphinos/utility4js";
+import {isExist, isValidNumber} from "@thedolphinos/utility4js";
+
 import BaseError from "./BaseError";
 import InvalidArgumentsError from "../developer/InvalidArgumentsError";
 import DATA from "../DATA.json";
@@ -16,16 +17,14 @@ class HTTPError extends BaseError
      */
     constructor (data: {statusCode?: number, code: string, message: {[key: string]: string}} = DATA.HTTP_0, ...args: any[])
     {
-        data = utility.init(data, DATA.HTTP_0);
-
-        if (utility.isExist(data) && utility.isExist(data.statusCode))
+        if (isExist(data) && isExist(data.statusCode))
         {
             HTTPError._validateStatusCode(data.statusCode);
         }
 
         super(data, ...args);
 
-        if (utility.isExist(data) && utility.isExist(data.statusCode))
+        if (isExist(data) && isExist(data.statusCode))
         {
             this._statusCode = data.statusCode;
         }
@@ -47,7 +46,7 @@ class HTTPError extends BaseError
      */
     protected static _validateStatusCode (statusCode: number): void
     {
-        if (!utility.isValidNumber(statusCode))
+        if (!isValidNumber(statusCode))
         {
             throw new InvalidArgumentsError();
         }
