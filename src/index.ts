@@ -10,7 +10,7 @@ import DbError from "./core/DbError";
 import DocumentNotFoundError from "./db/DocumentNotFoundError";
 import MoreThan1DocumentFoundError from "./db/MoreThan1DocumentFoundError";
 
-import HTTPError from "./core/HTTPError";
+import HttpError from "./core/HttpError";
 
 import ServerError from "./http/ServerError"; // 500s
 import ClientError from "./http/ClientError"; // 400s
@@ -55,7 +55,7 @@ export {
     DocumentNotFoundError,
     MoreThan1DocumentFoundError,
 
-    HTTPError,
+    HttpError,
 
     ServerError, // 500s
     ClientError, // 400s

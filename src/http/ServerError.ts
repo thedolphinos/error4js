@@ -1,13 +1,13 @@
 import {isExist} from "@thedolphinos/utility4js";
 
 import InvalidArgumentsError from "../developer/InvalidArgumentsError";
-import HTTPError from "../core/HTTPError";
+import HttpError from "../core/HttpError";
 import DATA from "../DATA.json";
 
 /**
  * Should be used as a super class for an error which must be thrown when there is a server error.
  */
-class ServerError extends HTTPError
+class ServerError extends HttpError
 {
     /**
      * @param {Object} [data] Contains status code other than default fields.
@@ -30,7 +30,7 @@ class ServerError extends HTTPError
      */
     protected static _validateStatusCode (statusCode: number): void
     {
-        HTTPError._validateStatusCode(statusCode);
+        HttpError._validateStatusCode(statusCode);
 
         const allowedStatusCodes = [500, 501, 502, 503, 504, 505, 506, 507, 508, 510, 511];
 

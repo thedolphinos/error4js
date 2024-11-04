@@ -7,8 +7,10 @@ import DATA from "../DATA.json";
 /**
  * Should be used as a super class for an error which should be thrown as an HTTP response.
  */
-class HTTPError extends BaseError
+class HttpError extends BaseError
 {
+    protected static type: string = "HttpError";
+
     private _statusCode?: number;
 
     /**
@@ -19,7 +21,7 @@ class HTTPError extends BaseError
     {
         if (isExist(data) && isExist(data.statusCode))
         {
-            HTTPError._validateStatusCode(data.statusCode);
+            HttpError._validateStatusCode(data.statusCode);
         }
 
         super(data, ...args);
@@ -53,4 +55,4 @@ class HTTPError extends BaseError
     }
 }
 
-export default HTTPError;
+export default HttpError;

@@ -6,6 +6,8 @@ import DATA from "../DATA.json";
  */
 class DeveloperError extends BaseError
 {
+    protected static type: string = "DeveloperError";
+
     /**
      * @param {Object} [data]
      * @param {*} [args] Parameters will be used assigned into placeholders.

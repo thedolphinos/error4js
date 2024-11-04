@@ -6,6 +6,8 @@ import DATA from "../DATA.json";
  */
 class DbError extends BaseError
 {
+    protected static type: string = "DbError";
+
     /**
      * @param {Object} [data]
      * @param {*} [args] Parameters will be used assigned into placeholders.
