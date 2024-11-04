@@ -6,6 +6,8 @@ import DATA from "../../DATA.json";
  */
 class InternalServerError extends ServerError
 {
+    type = "InternalServerError";
+
     /**
      * @param {*} [args] Parameters will be used assigned into placeholders.
      */

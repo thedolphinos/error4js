@@ -6,7 +6,7 @@ import DATA from "../DATA.json";
  */
 class DeveloperError extends BaseError
 {
-    protected static type: string = "DeveloperError";
+    type = "DeveloperError";
 
     /**
      * @param {Object} [data]

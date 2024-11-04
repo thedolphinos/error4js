@@ -8,6 +8,8 @@ const DEFAULT_LANGUAGE = "en";
  */
 class BaseError
 {
+    public static type: string;
+
     protected _code: string;
     protected _message: {[key: string]: string};
     protected _callStack: string;

@@ -9,7 +9,7 @@ import DATA from "../DATA.json";
  */
 class HttpError extends BaseError
 {
-    protected static type: string = "HttpError";
+    type = "HttpError";
 
     private _statusCode?: number;
 

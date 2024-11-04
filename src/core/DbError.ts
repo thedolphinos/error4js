@@ -6,7 +6,7 @@ import DATA from "../DATA.json";
  */
 class DbError extends BaseError
 {
-    protected static type: string = "DbError";
+    type = "DbError";
 
     /**
      * @param {Object} [data]
